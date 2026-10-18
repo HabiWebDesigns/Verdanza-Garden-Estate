@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Garden Gallery | Verdanza Garden Estate</title>
+  <meta name="description"
+    content="Browse weddings, prenup sessions, birthdays and garden scenes at Verdanza Garden Estate.">
+  <meta name="theme-color" content="#142a20">
+  <script>document.documentElement.classList.add('js'); try { if (!sessionStorage.getItem('vg') && !matchMedia('(prefers-reduced-motion:reduce)').matches) document.documentElement.classList.add('pending') } catch (e) { }</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Lato:wght@300;400;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body data-page="gallery">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div id="site-header"></div>
+  <main id="main">
+    <header class="phead">
+      <div class="deco-wrap r" data-deco></div>
+      <div class="wrap">
+        <h1 class="display">Garden<br>gallery</h1>
+        <p class="lead">Frames from weddings, sessions, and quiet mornings among the flowers.</p>
+      </div>
+    </header>
+    <section class="wrap gal">
+      <div class="filters" role="group" aria-label="Filter gallery">
+        <button class="tab" data-f="all" aria-pressed="true">All</button>
+        <button class="tab" data-f="weddings" aria-pressed="false">Weddings</button>
+        <button class="tab" data-f="prenup" aria-pressed="false">Prenup</button>
+        <button class="tab" data-f="birthdays" aria-pressed="false">Birthdays</button>
+        <button class="tab" data-f="garden" aria-pressed="false">Garden</button>
+        <button class="tab" data-f="events" aria-pressed="false">Events</button>
+      </div>
+      <div class="mason" id="grid"></div>
+    </section>
+    <section class="cta-band">
+      <div class="wrap">
+        <h2 class="display">See it<br>in person.</h2><a class="btn btn--solid" href="inquiry.html">Plan your event</a>
+      </div>
+    </section>
+  </main>
+  <div id="site-footer"></div>
+  <script src="js/script.js" defer></script>
+</body>
+
+</html>

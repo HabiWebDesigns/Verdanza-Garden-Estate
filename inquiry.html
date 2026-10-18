@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Inquiry | Verdanza Garden Estate</title>
+  <meta name="description"
+    content="Tell us about your celebration and our team will help you find the perfect garden setting.">
+  <meta name="theme-color" content="#142a20">
+  <script>document.documentElement.classList.add('js'); try { if (!sessionStorage.getItem('vg') && !matchMedia('(prefers-reduced-motion:reduce)').matches) document.documentElement.classList.add('pending') } catch (e) { }</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Lato:wght@300;400;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body data-page="inquiry">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div id="site-header"></div>
+  <main id="main">
+    <header class="phead">
+      <div class="deco-wrap r" data-deco></div>
+      <div class="wrap">
+        <h1 class="display">Let’s plan<br>something<br>beautiful.</h1>
+        <p class="lead">Tell us about your celebration and our team will help you find the perfect garden setting.</p>
+      </div>
+    </header>
+    <section class="wrap inq">
+      <div class="paper">
+        <!-- TODO: Connect this form to FormSubmit.
+         When ready, replace the <form> tag below with:
+         <form id="inquiry-form" action="https://formsubmit.co/YOUR_EMAIL_HERE" method="POST">
+         then add the hidden FormSubmit fields (e.g. _subject, _captcha) and remove the preventDefault block in js/script.js (search "FORMSUBMIT").
+         Until then NOTHING is submitted anywhere. -->
+        <form id="inquiry-form" novalidate>
+          <div class="fg">
+            <div class="f"><label for="name">Full name</label><input id="name" name="name" autocomplete="name" required>
+            </div>
+            <div class="f"><label for="email">Email</label><input id="email" name="email" type="email"
+                autocomplete="email" required></div>
+            <div class="f"><label for="phone">Phone number</label><input id="phone" name="phone" type="tel"
+                autocomplete="tel" required></div>
+            <div class="f"><label for="type">Event type</label><select id="type" name="event_type" required>
+                <option value="">Select one</option>
+                <option>Prenup Photoshoot</option>
+                <option>Wedding</option>
+                <option>Birthday</option>
+                <option>Private Event</option>
+                <option>Corporate Event</option>
+                <option>Other</option>
+              </select></div>
+            <div class="f"><label for="date">Event date</label><input id="date" name="event_date" type="date" required>
+            </div>
+            <div class="f"><label for="guests">Expected guests</label><input id="guests" name="guests" type="number"
+                min="1" max="500" inputmode="numeric" required></div>
+            <div class="f full"><label for="time">Preferred time</label><select id="time" name="preferred_time">
+                <option value="">No preference</option>
+                <option>Morning</option>
+                <option>Afternoon / golden hour</option>
+                <option>Evening</option>
+              </select></div>
+            <div class="f full"><label for="msg">Message</label><textarea id="msg" name="message" rows="6"
+                placeholder="Tell us about the day you imagine."></textarea></div>
+          </div>
+          <button class="btn btn--solid big" type="submit">Start planning</button>
+          <p class="form-msg" id="formMsg" role="status"></p>
+        </form>
+      </div>
+      <aside class="side">
+        <div class="arch ph"><img loading="lazy" data-u="1465495976277-4387d4b0b4c6" data-w="800"
+            alt="Bridal bouquet of soft flowers in a garden"></div>
+        <h2>Visit the garden</h2>
+        <p>Site viewings are by appointment, Tuesday to Sunday.</p>
+        <ul class="contact">
+          <li><i class="fa-solid fa-location-dot"></i> Cavite, Philippines (address to be confirmed)</li>
+          <li><i class="fa-solid fa-phone"></i> +63 900 000 0000</li>
+          <li><i class="fa-solid fa-envelope"></i> hello@verdanza.example</li>
+        </ul>
+      </aside>
+    </section>
+  </main>
+  <div id="site-footer"></div>
+  <script src="js/script.js" defer></script>
+</body>
+
+</html>
