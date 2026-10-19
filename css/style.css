@@ -1689,6 +1689,12 @@ figcaption {
     display: block
   }
 
+  .nav.open {
+    background: var(--deep);
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none
+  }
+
   #menu {
     position: fixed;
     inset: 0;
